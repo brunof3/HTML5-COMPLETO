@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title> Testando JavaScrip</title>
+<meta charset="UTF 8"/>
+
+ </head>
+
+<body>
+
+
+<h1> Testando JavaScrip <h1>
+<script>
+document.write("Vai se fode!");
+alert("cu");
+document.write("Olá, hoje é dia" + Date( ));
+	
+	
+	</script>
+	
+	</body>
+</html>

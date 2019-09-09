@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+
+/*******  FORMATAÇÃO DE FORMULÁRIO  <FORM> *****************************/
+/**************		LARGURA, ALTURA, MARGEM, BORDA	******************************/
+
+form {
+	width: 550px;
+	margin: auto;
+	}
+	
+/************************************************************************************/
+/******	FORMATAÇÃO DOS <INPUT> ( CONTROLES INTERATIVOS DO HTML5 ) E DO "TEXTAREA" PARA QUE TENHAM O MESMO FORMATO	********************************/
+	
+input, textarea {
+	font-family: sans-serif;
+	font-weight: normal;
+	font-size: 13pt;
+	color:#000;
+	background-color: rgba(255,255,255,.8);
+	}	
+/*************************************************************************************/
+/**********		FORMATAÇÃO PARA SENSIBILIDADE AO MOUSE	**********************************/
+	
+input:hover, textarea:hover {
+	background-color: #dddddd;
+	}	
+/************************************************************************************/
+/************	FORMATAÇÃO DO TÍTULO DOS BLOCOS <LEGEND>	************************************************************************/
+
+legend {
+	color:#333;
+	font-weight:bold;
+	font-size:13pt;
+	font-family: sans-serif;
+	}	
+
+
+	
+/************************************************************************************/
+/******************		FORMATAÇÃO DOS BLOCOS DE FORMULÁRIO <FIELDSET>	******************************************************************/
+	
+fieldset {
+	border-color: #cecece;
+	margin: 20px;
+	}
+/************************************************************************************/
+/*************************	FIELDSET COM UM ID PARA SER CONFIGURADO DE FORMA DIFERENTE	***********************************************************/
+fieldset#sexo {
+	width: 150px;
+	border: 20 px solid black;
+	}
+
+fieldset.label#mensagem {
+	margin-top: -100px;
+	}	
+/************************************************************************************/
+/*************************	IMAGEM NO FIELDSET PARA FICAR AO FUNDO DO BLOCO	***********************************************************/
+	
+fieldset#usuario {
+	background: url("../_imagens/icone-contato.png") no-repeat 95% 95%;
+	}	
+fieldset#endereco {
+	background: url("../_imagens/icone-endereco.png") no-repeat 95% 95%;
+	}	
+fieldset#mensagem {
+	background: url("../_imagens/icone-mensagem.png") no-repeat 95% 95%;
+	}		
+fieldset#pedido {
+	background: url("../_imagens/icone-pagamento.png") no-repeat 95% 95%;
+	}	

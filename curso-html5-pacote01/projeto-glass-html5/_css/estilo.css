@@ -1,0 +1,384 @@
+@charset "UTF-8";
+
+/**************************************************************************************/
+/**************************************************************************************/
+/**************************************************************************************/
+
+/******	  IMPORTAÇÃO DE FOTO PARA FONTE DIRETO DO GOOGLE OU OUTRA URL DE FONTE **********/
+
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+
+/**************************************************************************************/
+/*******  NOME DA FONTE ***************************************************************/
+
+@font-face {
+	font-family: 'FonteLogo';
+	
+}
+/**************************************************************************************/
+/**************************************************************************************/
+/**************************************************************************************/
+/*****************  FONTE IMPORTADA DO PC  ***************************/
+@font-face {
+	font-family: 'FonteLogo1';
+	src: url("../_fonts/bubblegum-sans-regular.otf");
+	
+}
+/**************************************************************************************/
+/**************************************************************************************/
+/**************************************************************************************/
+/**************************************************************************************/
+
+/**************** CORPO DA PÁGINA ( FONTE, FUNDO, COR DA FONTE )***************************/
+body 
+{		
+		font-family: 'FonteLogo', sans-serif;
+		font-weight: soft;
+		background-color: #dddddd;
+		color: rgba(0,0,0,1); 
+		}
+
+/*********************  DIVISÓRIA PARA MODIFICAR ÁREA SELECIONADA ***********************/	
+/**********************		NESSE CASO O CORPO DA PÁGINA	***************/
+
+div#interface {
+		width: 900px;
+		background-color: white;
+		margin: 0px auto 0px auto;
+		box-shadow: -10px 0px 10px rgba(0,0,0,.4);
+		padding: 20px;
+		margin-top:-10px;
+		}
+		
+/**************************************************************************************/
+/****************	CONFIGURAÇÃO DE PARÁGRAFO	<p>	****************************************/		
+p 
+	{		
+		text-align: justify;
+		text-indent: 50px;
+	}
+/**************************************************************************************/
+/**************************************************************************************/
+/**************************************************************************************/
+		
+/**************   CONFIGURAÇÃO DO LINK <a>  **********************************/					
+a {
+	color: #606060;
+	text-decoration: none;
+	}
+	
+/*************** EFEITO DO LINK PARA O TEXTO REAGIR COM O MOUSE ( HOVER DEIXA  A ÁREA SELECIONADA SENSÍVEL AO MOUSE ) ************************/	
+
+a:hover {
+	text-decoration: underline;
+	
+}
+/**************************************************************************************/
+/**************************************************************************************/
+/**************************************************************************************/
+/**************************************************************************************/
+
+
+/****************   TUDO QUE ESTÁ EM <HEADER>	**********************************************************************/
+
+/************************  CONFIGURAÇÃO DO <HEADER ID="CABECALHO">   ************************************/
+
+header#cabecalho {
+		border-bottom: 1px #606060 dashed;
+		height: 150px;
+		background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 90px ;
+}
+/**************************************************************************************/
+
+/***************** CONFIGURAÇÃO DA IMAGEM DENTRO DE HEADER ( <IMG ID="ICONE"/> ) "GLASS LOGO PEQ" ***************************/
+header#cabecalho img#icone {
+		position:absolute;
+		left: 1000px;
+		top: 70px; 
+}					
+
+
+/**************************************************************************************/
+
+/******************************  TÍTULO DO TOPO DA PÁGINA   ************************************/
+
+/**************************  TÍTULO 1 " GOOGLE GLASS "  *****************************/
+header#cabecalho h1 {
+	
+		font-family: 'Titillium Web', sans-serif;
+		font-size: 35pt;
+		color:#606060;
+		text-shadow: 1px 1px 1px  rgba(0,0,0,.6);
+		padding: 0px;
+		margin-top:0;
+		margin-bottom: 0px;
+}
+
+/*********SUBTÍTULO "A REVOLUÇÃO ESTÁ CHEGANDO"***************/
+
+header#cabecalho h2 {
+font-family: 'Titillium Web', sans-serif;
+		color:#888888;
+		font-size: 15pt;
+		padding: 0px;
+		margin-top: -10px;
+}
+/**************************************************************************************/
+/**************************************************************************************/
+/****************************************************************************************/
+
+/******************* FORMATAÇÃO DE IMAGENS COM LEGENDA ****************/
+			
+/*************** CONFIGURAÇÃO DA IMAGEM  ***************************************************************/
+
+figure.foto-legenda  {
+	
+		position: relative;
+		border: 8px solid white;
+		box-shadow: 1px 1px 4px black;
+}
+/**************** LARGURA E COMPRIMENTO DA IMAGEM  ******************************************************/
+
+figure.foto-legenda img {
+	
+		width: 100%;
+		height: 100%;
+}
+
+/*******************  CONFIGURAÇÃO DO FIGCAPTION  *******************************************************************/
+/************** FIGCAPTION DESTINA-SE A MARCAR O CABEÇALHO OU A LEGENDA PARA UMA FIGURA ********************/
+
+figure.foto-legenda figcaption
+{
+	opacity: 0;
+	background-color: rgba(0,0,0,.4);
+	position: absolute;
+	top: 0px;
+	color: white;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	transition: opacity 2s;
+	box-sizing: border-box;
+	
+}
+/*********************   PARA A LEGENDA APARECER  *****************************************************************/
+
+figure.foto-legenda:hover figcaption {
+	opacity: 1;
+	}
+
+/**************************************************************************************/
+/**************************************************************************************/
+/**************************************************************************************/
+
+/*************** <NAV> É USADO PARA INDICAR UMA ÁREA PARA FORMATAÇÃO IGUAL O <DIV>  ***************************************/
+
+/*************** CONFIGURAÇÃO DO MENU **************************************************/
+
+nav#menu {
+	display: block;
+}
+/********** <UL> UNORDERED LIST PARA CRIAR UMA LISTA DE BOLINHAS OU SIMBOLOS **************************************/
+
+nav#menu ul {
+	
+		list-style: none;
+		text-transform: uppercase;
+		position:absolute;
+		top: -20px;
+		left: 500px;
+	}
+	
+/*********  CONFIGURAÇÃO DE <LI> LIST ITENS - LISTA OS ITENS *****************************************************************************/
+	
+
+nav#menu li {
+		display:inline-block;
+		background-color: #dddddd;
+		padding: 10px;
+		margin: 2px;
+		transition: background-color 3s;
+}
+nav#menu li:hover {
+	
+		background-color: #606060;
+		
+}
+
+/**** PARA SUMIR COM O H1 *********************************************************************/
+
+nav#menu h1 {
+	display: NONE;
+	
+}
+/******** LINKS NO MENU PRINCIPAL ******************************************************************/
+
+nav#menu a {
+	color: black;
+	text-decoration: none;
+	
+}
+
+nav#menu a:hover {
+	color: white;
+	text-decoration: none;
+}
+/**************************************************************************************/
+/**************************************************************************************/
+/**************************************************************************************/
+
+/******************  CONFIGURAÇÃO DO <SECTION ID="CORPO"> ********************************/
+
+section#corpo {
+	display: block;
+	width: 500px;
+	float: left;
+	border-right: 3px solid #606060;
+	padding-right: 20px;
+}
+/**************************************************************************************/
+/**************************************************************************************/
+/**************************************************************************************/
+
+/***************** CONFIGURAÇÃO DO <ARTICLE ID="NOTOCIA-PRINCIPAL"> ********************************************************/
+
+
+article#noticia-principal h2  {
+	font-size: 13pt;
+	color: #606060;
+	background-color: #dddddd;
+	padding: 5px 0px 5px 10px;
+	margin: 10px 0px 10px 0px;
+}
+
+/*********************  CONFIGURAÇÃO DO HEADER DENTRO DO ARTICLE  ******************************************************/
+
+header#cabecalho-artigo  h1 {
+	font-family: 'FonteLogo1', sans-serif;
+	font-size: 20pt;
+	color: #606060;
+	margin-bottom: 0px;
+} 
+header#cabecalho-artigo h2 {
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 13pt;
+	color: #cecece;
+	background-color: white;
+	margin: 0px;
+	
+}
+
+header#cabecalho-artigo h3 {
+	font-size: 12px;
+	color: #606060; 
+	}
+/************	PARA ALINHAR AO LADO É PRECISO CRIAR UMAR CLASS DIFERENTE <H3 CLASS="DIREITA">********************************************/
+	.direita {
+		text-align: right;
+		
+	}
+/**************************************************************************************/
+/**************************************************************************************/
+/**************************************************************************************/
+
+/*********************	EDIÇÃO DE TABELAS 	*****************************************************************/
+
+table#tabela {
+	border: 1px solid #606060;
+	border-spacing: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	}  
+/**************************************************************************************/
+/***********	CONFIGURAÇÃO DAS CÉLULAS DA TABELA ******************************************************************/
+	
+table#tabela td {
+	
+	border: 1px solid #606060;
+	padding: 10px;
+	text-align: left;
+	vertical-align: middle;
+	}
+/**************************************************************************************/
+/************** CONFIGURAÇÃO DAS CÉLULAS A ESQUERDA ************************************************************************/
+	
+table#tabela td.ce {
+		color: white;
+		background-color: #606060;
+		vertical-align: top;
+		font-weight: bold;
+		text-align: right;
+	}
+/**************************************************************************************/	
+/************		CONFIGURAÇÃO DAS CÉLULAS A DIREITA *********************************************************************/
+
+table#tabela td.cd {
+	color: black;
+	background-color: #606060;
+	font-weight: bolder;
+	text-align: left;
+	font-size: 8;
+}
+table#tabela td.cd {
+	background-color: #cecece;
+}
+/**************************************************************************************/
+/**************  TÍTULO DA TABELA <CAPTION> INDICA TÍTULO QUANDO VINCULADO A <TABLE> *********************************************************/
+
+table#tabela caption {
+	color: #888888;
+	font-size: 13pt;
+	font-weight: bolder;
+	
+}
+/******************** DEIXAR LETRAS MENORES COM SPAN  "<CAPTION > TEXTO <SPAN> TEXTO</SPAN></CAPTION>" *****************************/
+
+table#tabela caption span {
+	display: block;
+	float: right;
+	color: black;
+	font-size: 8pt;
+	margin-top: 10px;
+}
+/**************************************************************************************/
+/**************************************************************************************/
+/**************************************************************************************/
+
+/****************** CONFIGURAÇÃO DO ASIDE (AO LADO) ********************************************************************/
+
+aside#lateral {
+	display: block;
+	width: 350px;	
+	float: right;
+	background-color: #dddddd;
+	padding: 10px;
+	margin-top: 10px;
+	box-shadow: 3px 3px 3px rgba(0,0,0,.5);
+}
+aside#lateral h1 {
+	font-family: 'FonteLogo', sans-serif;
+	font-size: 20pt;
+	color: #606060;
+	margin-top: 10px;
+	
+}
+aside#lateral h2 {
+	background-color: #606060;
+	font-size: 13pt;
+	color: white;
+	padding: 7px;
+	
+}
+/**************************************************************************************/
+/**************************************************************************************/
+/****************	CONFIGURAÇÃO FOOTER	**********************************************************************/
+
+
+footer#rodape {
+	border-top: 2px solid #606060;
+	clear: both;
+}
+footer#rodape p{
+	text-align: center;
+}
